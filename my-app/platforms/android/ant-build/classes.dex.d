@@ -1,0 +1,27 @@
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes.dex : \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\com\phonegap\helloworld\BuildConfig.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\com\phonegap\helloworld\HelloWorld.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\com\phonegap\helloworld\R$attr.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\com\phonegap\helloworld\R$drawable.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\com\phonegap\helloworld\R$string.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\com\phonegap\helloworld\R$xml.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\com\phonegap\helloworld\R.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$1.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$2$1$1.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$2$1.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$2.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$3.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$SocialSharingRunnable.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactAccessor$WhereOptions.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactAccessor.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactAccessorSdk5.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactInfoDTO.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$1.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$2.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$3.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$4.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\plugin\sms\Sms$1.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\classes\org\apache\cordova\plugin\sms\Sms.class \
+F:\wwwroot\phonegap\my-app\platforms\android\ant-build\dexedLibs\classes-0063f14d30ebbedbd2247b5ccc1ee266.jar \

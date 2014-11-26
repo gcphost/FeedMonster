@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
+
+	<title>FeedMonster Beta</title>
+
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap-theme.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="https://feed-monster.com/resources/site.css">
+</head>
+<body>
+
+<div class="pullrefresh"></div>
+<div class="site_wrap container-fluid">
+<div class="img-rounded bg-info beta">
+	<span>FeedMonster is a free beta service. <a href="#report" class="reportissues">Tell the devs what you think</a>.</span>
+</div>
+
+
+<nav class="navbar">
+	<div class="navbar-brand col-md-7 col-xs-10 col-sm-6">
+		<strong class="">Feeding:</strong> <span id="categoryTitle">Top Stories</span>
+	</div>
+
+	<div class="updateavail col-md-1 col-xs-1 col-sm-1">
+		<span id="timestamp"><i class="fa fa-refresh fa-fw fa-lg fa-colored"></i></span>
+	</div>
+
+	<div class="betaaccess">
+		<div class="betawrap col-md-5 col-xs-12 col-sm-5">
+			<h4>Only a few will get their monster!</h4><p><a href="#" class="signup active">Will it be you?</a></p>
+		</div>
+	</div>
+
+	<div class="passwordaccess">
+		<div class="betawrap col-md-5 col-xs-12 col-sm-5">
+			<input type="password" class="form-control monsterpassword" placeholder="Enter your monsters password">
+		</div>
+	</div>
+
+	<div class="fullaccess" style="display:none">
+		<div id="feedwrap" class="sidenav col-md-4 col-xs-12 col-sm-4">
+			<ul class="nav navbar-nav">
+				<li class="dropdown mega-dropdown">
+					<div id="dd" class="dropdown-toggle" data-toggle="dropdown">Feed the Monster<br><span class="fa fa-caret-down fa-colored"></span></div>
+					<ul class="dropdown-menu mega-dropdown-menu row">
+						<li>
+						<div class="col-sm-4">
+							<div class="dropdown-header">Your Monster</div>
+							<div class="control-1">
+								<ul class="list-unstyled" id="customcats">
+									<li><a data-cat="yourpantry" class="clink" href="/yourpantry/" rel="nofollow">Your Pantry</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="favorites" class="clink" href="/favorites/" rel="nofollow">Favorite Foods</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="recent" class="clink" href="/recent/" rel="nofollow">Recently Munched</a></li>
+									<li class="divider"></li>
+									<li class="newlist"><a class="createcat" href="#" rel="nofollow">+ New Grocery List</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="dropdown-header">Monster World</div>
+							<div class="nav-scroller control-2">
+								<ul class="list-unstyled nav-scroller-wrap ">
+									<li><a data-cat="topstories" class="clink" href="/topstories/">Top Stories</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="trending" class="clink" href="/trending/">Trending</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="us" class="clink" href="/us/">U.S.</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="world" class="clink" href="/world/">World</a></li>
+									<li class="divider"></li>
+
+									<li><a data-cat="business" class="clink" href="/business/">Business</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="money" class="clink" href="/money/">Money</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="tech" class="clink" href="/technology/">Technology</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="science" class="clink" href="/science/">Science</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="travel" class="clink" href="/travel/">Travel</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="food" class="clink" href="/food/">Food</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="living" class="clink" href="/living/">Lifestyle</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="politics" class="clink" href="/politics/">Politics</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="health" class="clink" href="/health/">Health</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="autos" class="clink" href="/autos/">Automotive</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="games" class="clink" href="/games/">Games</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="sports" class="clink" href="/sports/">Sports</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="entertainment" class="clink" href="/entertainment/">Entertainment</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="music" class="clink" href="/music/">Music</a></li>
+								</ul>
+							</div>
+							<div class="nav_more"><i class="fa fa-caret-down"></i></div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="dropdown-header">Monster Local</div>
+								<ul class="list-unstyled nav-scroller-wrap ">
+									<li><a data-cat="austin" class="clink" href="/austin/">Austin</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="boston" class="clink" href="/boston/">Boston</a></li>
+									<li class="divider"></li>
+									<li><a data-cat="newyork" class="clink" href="/newyork/">New York</a></li>
+								</ul>
+						</div>
+						</li>
+					</ul>
+				</li>
+				<li class="settings-body-wrap">
+					<div class="settings-nav-click"><i class="fa fa-gears"></i></div>
+					<div class="settings-nav">
+						<ul class="user-menu list-unstyled" >
+							<li class="list-group-item">
+								<span class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" role="button">
+									<i class="fa fa-bars fa-fw"></i> Change Sort
+								</span>
+
+								<ul class="dropdown-menu sort-menu" role="menu">
+									<li><a href="#likes"><i class="fa fa-thumbs-up"></i> Likes</a></li>
+									<li><a href="#comments"><i class="fa fa-comments"></i> Comments</a></li>
+									<li><a href="#shares"><i class="fa fa-share-alt"></i> Shares</a></li>
+									<li><a href="#date"><i class="fa fa-calendar-o"></i> Date</a></li>
+									<li><a href="#author"><i class="fa fa-user"></i> Author</a></li>
+									<li><a href="#source"><i class="fa fa-rss"></i> Feed</a></li>
+								</ul>
+							</li>
+							<li class="list-group-item ">
+								<span class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"  role="button">
+									<i class="fa fa-th-large fa-fw"></i> Change Display
+								</span>
+
+								<ul class="dropdown-menu display-menu" role="menu">
+									<li><a href="#list"><i class="fa fa-align-justify"></i> List</a></li>
+									<li><a href="#magazine"><i class="fa fa-th-list"></i> Magazine</a></li>
+									<li><a href="#card"><i class="fa fa-th-large"></i> Cards</a></li>
+								</ul>
+							</li>
+							<li class="user-access list-group-item settingsclick"><i class="fa fa-newspaper-o fa-fw"></i> My Feeds</li>
+
+							<li class="user-access list-group-item sharemonster"><i class="fa fa-share-square-o fa-fw"></i> Share Monster</li>
+							<li class="user-access list-group-item emailmonster"><i class="fa fa-link fa-fw"></i> Monster Links</li>
+							<li class="user-access list-group-item passwordmonster"><i class="fa fa-lock fa-fw"></i> Set Password</li>
+							<li class="user-access list-group-item killmonster"><i class="fa fa-trash fa-fw"></i> Kill Monster</li>
+							<li class="user-access list-group-item logout"><i class="fa fa-sign-out fa-fw"></i> Log Out</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="search-wrap input-group left-inner-addon">
+	<i class="fa fa-search fa-searchcontrol"></i>
+	<input type="search" class="form-control" id="search" placeholder="Search the monsters food supply.">
+	<span class="input-group-btn">
+		<button id="searchclear" class="btn btn-default" type="button"><i class="fa fa-eraser"></i></button>
+	</span>
+</div>
+
+<div id="news"></div>
+<div class="clearfix"></div>
+<div id="loading">The monster is eating :nom :nom :nom <i class="fa fa-refresh fa-spin"></i></div>
+<div id="noresults">Uh oh! Your monsters out of food! <a href="#feedme" class="feedhelp">Feed the Monster</a> something else. <div class="notes">(the monster is always looking for new food, try again soon)</div></div>
+<div id="error"><p>Oh no! There was a problem with delivering the food.</p><p><a href="#feedme" class="feedhelp">Feed the Monster</a> something else!</p></div>
+<div id="more" class="btn btn-primary">Feed Me!</div>
+</div>
+<div class="scroll-top-wrapper-left">
+	<div class="addcatmenu">
+		<ul class="list-group addfeedslist">
+		</ul>
+	</div>
+	<div class="scroll-top-wrapper2">
+		<span class="scroll-top-inner">
+			<i class="fa fa-2x fa-plus addfeedtocat"></i>
+		</span>
+	</div>
+</div>
+
+<div class="scroll-top-wrapper">
+	<div class="scroll-top-wrapper2">
+		<span class="scroll-top-inner">
+			<i class="fa fa-2x fa-level-up"></i>
+		</span>
+	</div>
+	<div id="bottomrefresh" class="scroll-top-wrapper2 circle">
+		<span class="scroll-top-inner">
+			<i class="fa fa-2x fa-refresh"></i>
+		</span>
+	</div>
+</div>
+
+<div class="modal fade" id="dialog" role="dialog" aria-labelledby="dialogTitle" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="dialogTitle">&nbsp;</h4>
+			</div>
+			<div class="modal-body" id="dialogBody"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="settings" tabindex="-2"  role="dialog" aria-labelledby="settingsTitle" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<div class="modal-title" id="settingsTitle">
+					<div class="dropdown settingsdrop">
+						<h4>Your Feeds</h4>
+					</div>	 			
+				</div>
+			</div>
+			<div class="modal-body">
+				<div class="form-group feedme-fix">
+					<div class="input-group left-inner-addon">
+						<i class="fa fa-search fa-searchcontrol2"></i>
+						<div class="typewrap" data-type="settings"><input type="text" class="form-control typeahead rssinput" placeholder="Feed me some words, WEB, RSS or OPML links!"></div>
+						<span class="input-group-btn">
+							<span class="btn btn-default btn-file" data-placement="bottom" data-toggle="tooltip" title="Upload OPML File (or drag &amp; drop)">
+								<i class="fa fa-upload fa-upload-icon"></i> <input id="fileupload" name="upload" type="file">
+							</span>
+							<button class="btn btn-default clearsearch" type="button"><i class="fa fa-eraser fa-fw"></i></button>
+							<button class="btn btn-primary addrss" type="button">Feed Me!</button>
+						</span>
+					</div>
+				</div>
+				<div class="section">
+					<div id="rsslist">
+						<ul class="settings-feed-list list-group"></ul>
+					</div>
+				</div>
+				<div class="section"></div>
+			 </div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var device='android';
+	var feed_added=false;
+	var switch_cat=false;
+	var switch_cat_to=false;
+	var site_url='https://feed-monster.com/';
+</script>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://feed-monster.com/resources/site.js"></script>
+</body>
+</html>
