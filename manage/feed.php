@@ -437,7 +437,7 @@ class Aggregator{
 
 
 	private function facebook($link){
-		$token="&access_token=377670419037612|86ed78042214c1fe1f718392ab2903ec";
+		$token="&access_token=|";
 		$content = file_get_contents("https://graph.facebook.com/fql?&format=json$token&q=select%20total_count,like_count,comment_count,share_count,click_count%20from%20link_stat%20where%20url=%27$link%27");
 		return json_decode($content, true);
 	}
